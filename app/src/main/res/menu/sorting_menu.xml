@@ -10,4 +10,8 @@
         android:id="@+id/top_rated"
         android:title="Top Rated">
     </item>
+    <item
+        android:id="@+id/favorite"
+        android:title="Favorites">
+    </item>
 </menu>

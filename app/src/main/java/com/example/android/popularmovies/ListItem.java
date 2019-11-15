@@ -7,14 +7,26 @@ public class ListItem
     private String overview;
     private int vote_average;
     private String release_date;
+    private int id;
 
-    public ListItem(String original_title, String poster_path, String overview, int vote_average, String release_date)
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public ListItem(String original_title, String poster_path, String overview, int vote_average, String release_date,int id)
     {
         this.original_title = original_title;
         this.poster_path = poster_path;
         this.overview = overview;
         this.vote_average = vote_average;
         this.release_date = release_date;
+        this.id=id;
     }
 
     public void setPoster_path(String poster_path) {

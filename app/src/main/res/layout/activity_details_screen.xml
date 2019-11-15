@@ -3,19 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-      tools:context=".DetailsScreen">
+    tools:context=".DetailsScreen">
  <RelativeLayout
      android:layout_width="match_parent"
      android:layout_height="match_parent">
 
-   <ImageView
-       android:id="@+id/image_thumbnail"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_centerHorizontal="true"
-
-       />
+    <RelativeLayout
+       android:id="@+id/image_thumbnail_button"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+           <ImageView
+           android:id="@+id/image_thumbnail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+             />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/favorite_button"
+               android:text="Mark as favorite"
+               android:layout_below="@+id/image_thumbnail"
+               android:layout_centerHorizontal="true"
+               android:padding="3dp"
+               />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deletefavorite_button"
+            android:text="Delete Favorite"
+            android:layout_below="@+id/image_thumbnail"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/original_title"
@@ -23,7 +45,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="25sp"
-        android:layout_below="@+id/image_thumbnail"
+        android:layout_below="@+id/image_thumbnail_button"
         android:layout_centerHorizontal="true"
 
         />
@@ -43,6 +65,7 @@
         android:layout_below="@+id/overview"
         android:textStyle="bold"
         android:textSize="20sp"/>
+
     <TextView
         android:id="@+id/vote_average"
         android:layout_width="wrap_content"
@@ -64,7 +87,49 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/release"
         />
+  <TextView
+      android:id="@+id/trailers"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="25sp"
+      android:layout_below="@+id/release_date"
+      android:layout_centerHorizontal="true"
+      android:text="Trailers"
 
- </RelativeLayout>
+      />
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_view_details"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/trailers"
+      android:padding="8dp"
+      />
+
+  <TextView
+      android:id="@+id/reviews"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="25sp"
+      android:layout_below="@+id/recycler_view_details"
+      android:layout_centerHorizontal="true"
+      android:text="Reviews"
+
+      />
+
+  <androidx.recyclerview.widget.RecyclerView
+
+      android:id="@+id/recycler_view_review"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/reviews"
+      android:padding="8dp"
+      />
+
+  </RelativeLayout>
+
+
+
 
 </ScrollView>

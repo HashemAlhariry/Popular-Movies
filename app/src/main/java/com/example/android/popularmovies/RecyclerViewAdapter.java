@@ -3,7 +3,6 @@ package com.example.android.popularmovies;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +33,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layoul_listitem, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent, false);
         ViewHolder holder = new ViewHolder(view);
 
 
@@ -49,7 +48,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         String moviePosterURL = moviesArray.get(position).getPoster_path();
 
         if (!TextUtils.isEmpty(moviePosterURL)) {
-            System.out.println("movieposterURL" + moviePosterURL);
+            //System.out.println("movieposterURL" + moviePosterURL);
             Picasso.get().load(moviePosterURL).into(holder.imageView);
         }
 
@@ -63,7 +62,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 intent.putExtra("overview", moviesArray.get(position).getOverview());
                 intent.putExtra("vote_average", moviesArray.get(position).getVote_average());
                 intent.putExtra("release_date", moviesArray.get(position).getRelease_date());
-
+                intent.putExtra("id",moviesArray.get(position).getId());
                 mContext.startActivity(intent);
 
             }

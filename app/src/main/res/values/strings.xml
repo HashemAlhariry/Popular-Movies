@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Popular Movies</string>
     <string name="title_activity_details_screen">DetailsScreen</string>
+    <string name="movieimage">movieimage</string>
+    <string name="hajssa">hajssa</string>
+    <string name="jdhskdks">jdhskdks</string>
 </resources>
