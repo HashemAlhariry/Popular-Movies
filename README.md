@@ -1,6 +1,6 @@
 # Popular-Movies-stage1
 This app gets data from the movie db using REST Api's,
-retrieving them with Top rated  most Popular or favorite list 
+retrieving them with Top rated or most Popular or favorite list 
 see reviews or trailers for a specific movie or add it to your favorite list to check it later
 
 
