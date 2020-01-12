@@ -18,6 +18,8 @@ Allow users to mark a movie as a favorite in the details view by tapping a butto
 Create a database and content provider to store the names and ids of the user's favorite movies.
 Modify the existing sorting criteria for the main view to include an additional pivot to show their favorites collection.
 
+
+
 ![one](https://user-images.githubusercontent.com/45319166/68981591-90314800-080c-11ea-9bbf-536afc147f7c.png)
 ![two](https://user-images.githubusercontent.com/45319166/68981465-24e77600-080c-11ea-951d-786352f666eb.PNG)
 ![three](https://user-images.githubusercontent.com/45319166/68981466-24e77600-080c-11ea-909a-af809e607d2a.PNG)
