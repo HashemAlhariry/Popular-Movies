@@ -1,6 +1,7 @@
 # Project Overview
 
-*In Stage1 your app will:*
+**In Stage1 your app will:**
+
 Fetch data from the Internet with theMovieDB API.
 Use adapters and custom list layouts to populate list views.
 Incorporate libraries to simplify the amount of code you need to write
@@ -8,7 +9,8 @@ Present the user with a grid arrangement of movie posters upon launch.
 Allow your user to change sort order via a setting: The sort order can be by most popular or by highest-rated
 Allow the user to tap on a movie poster and transition to a details screen with additional information such as: original title, movie poster image thumbnail, a plot synopsis (called overview in the api), user rating (called vote_average in the api), release date
 
-*In Stage2 your app will:*
+**In Stage2 your app will:**
+
 In this second and final stage, you will build a fully featured application that looks and feels natural on the latest Android operating system, adding functionality to the app you built in Stage 1:
 Allow users to view and play trailers.
 Allow users to read reviews of a selected movie.
